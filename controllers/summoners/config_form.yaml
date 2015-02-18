@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Summoner
+form: @/plugins/stu177/leagueTracker/models/summoner/fields.yaml
+modelClass: Stu177\LeagueTracker\Models\Summoner
+
+create:
+    title: Add Summoner
+    flashSave: Added Summoner!
+    redirect: stu177/leagueTracker/summoners
+
+update:
+    title: Edit Summoner
+    flashSave: Updated Summoner!

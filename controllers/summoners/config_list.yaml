@@ -1,0 +1,12 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: Summoners
+list: ~/plugins/stu177/leagueTracker/models/summoner/columns.yaml
+modelClass: Stu177\LeagueTracker\Models\Summoner
+recordUrl: stu177/leagueTracker/summoners/update/:id
+noRecordsMessage: No summoners to display.
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar

@@ -1,0 +1,41 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    name@create:
+        label: Summoner Name
+        span: left
+    name@update:
+        label: Summoner Name
+        span: left
+        attributes:
+            readonly: true
+    region@create:
+        label: Region
+        type: dropdown
+        options:
+            euw: Europe West
+            eune: Europe Nordic & East
+            na: North America
+            kr: Republic of Korea
+            lan: Latin America North
+            las: Latin America South
+            oce: Oceania
+            br: Brazil
+            ru: Russia
+            tr: Turkey
+            pbe: Public Beta Environement
+        span: right
+        required: true
+    region@update:
+        label: Region
+        span: right
+        required: true
+        cssClass: text-uppercase
+        attributes:
+            readonly: true
+    tracking:
+        label: Track This Summoner
+        type: checkbox
+        span: left

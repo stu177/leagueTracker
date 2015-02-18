@@ -1,0 +1,6 @@
+1.0.1:
+    - Added summoner migrations
+    - create_summoner_table.php
+1.0.2:
+    - Added match migrations
+    - create_match_table.php

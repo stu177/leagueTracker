@@ -1,0 +1,7 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Match
+form: @/plugins/stu177/leagueTracker/models/match/fields.yaml
+modelClass: Stu177\LeagueTracker\Models\Match

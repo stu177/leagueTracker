@@ -1,0 +1,28 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('stu177/leagueTracker/summoners') ?>">Summoners</a></li>
+        <li><?= e(trans($this->pageTitle)) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <?= Form::open(['class'=>'layout-item stretch layout-column']) ?>
+
+        <?= $this->formRender() ?>
+
+        <div class="form-buttons layout-item fix">
+            <div class="loading-indicator-container">
+                <button type="submit" data-request="onSave" data-hotkey="ctrl+s, cmd+s" data-load-indicator="Updating" class="btn btn-primary">Update</button>
+                <span class="btn-text">
+                    or <a href="<?= Backend::url('stu177/leagueTracker/summoners') ?>">Cancel</a>
+                </span>
+            </div>
+        </div>
+
+    <?= Form::close() ?>
+
+<?php else: ?>
+    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
+    <p><a href="<?= Backend::url('stu177/leagueTracker/summoners') ?>" class="btn btn-default">Return</a></p>
+<?php endif ?>

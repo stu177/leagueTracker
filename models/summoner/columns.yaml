@@ -1,0 +1,12 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+    name: Name
+    region:
+        label: Region
+        cssClass: text-uppercase
+    tracking:
+        label: Tracking
+        type: switch

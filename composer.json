@@ -1,0 +1,8 @@
+{
+    "name": "stu177/leagueTracker",
+    "description": "League Tracker plugin for October CMS",
+    "require": {
+        "php": ">=5.4",
+        "paquettg/leaguewrap": "dev-master"
+    }
+}
