@@ -1,3 +1,18 @@
 .text-uppercase {
     text-transform: uppercase;
 }
+
+.text-uppercase input {
+    text-transform: uppercase;
+}
+
+.disabled-select .form-control {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+
+.disabled-select .form-control a  {
+    pointer-events: none;
+    opacity: 1;
+    background-color: transparent!important;
+}

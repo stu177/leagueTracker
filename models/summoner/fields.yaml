@@ -32,9 +32,20 @@ fields:
         label: Region
         span: right
         required: true
-        cssClass: text-uppercase
-        attributes:
-            readonly: true
+        type: dropdown
+        options:
+            euw: Europe West
+            eune: Europe Nordic & East
+            na: North America
+            kr: Republic of Korea
+            lan: Latin America North
+            las: Latin America South
+            oce: Oceania
+            br: Brazil
+            ru: Russia
+            tr: Turkey
+            pbe: Public Beta Environement
+        cssClass: disabled-select
     tracking:
         label: Track This Summoner
         type: checkbox
