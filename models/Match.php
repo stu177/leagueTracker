@@ -4,6 +4,7 @@ use App;
 use Str;
 use Lang;
 use Model;
+use LeagueWrap\Api;
 
 class Match extends Model
 {
@@ -17,4 +18,12 @@ class Match extends Model
     public $rules = [
         'id' => 'required|summonerExists'
     ];
+
+    /**
+     * Retrieves last 15 matches for tracked summoners
+     */
+    public function getMatches($summoners)
+    {
+
+    }
 }

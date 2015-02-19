@@ -11,7 +11,7 @@ tabs:
             tab: General
         cron_mode:
             span: left
-            label: Use Cron scheduling
+            label: Use Laravel Queues
             type: checkbox
-            commentAbove: This allows automatic tracking of match history. Requires the Laravel Artisan scheduler Cron job to be enabled on your server. See the Laravel docs for more info on how to add this single Cron job.
+            commentAbove: This allows automatic tracking of match history. Requires the use of artisan on your web server to start the listener.
             tab: Advanced
