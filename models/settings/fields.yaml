@@ -2,8 +2,16 @@
 #  Field Definitions
 # ===================================
 
-fields:
-    api_key:
-        span: left
-        label: Riot API Key
-        commentAbove: You need this in order to query the Riot API
+tabs:
+    fields:
+        api_key:
+            span: left
+            label: Riot API Key
+            commentAbove: You need this in order to query the Riot API
+            tab: General
+        cron_mode:
+            span: left
+            label: Use Cron scheduling
+            type: checkbox
+            commentAbove: This allows automatic tracking of match history. Requires the Laravel Artisan scheduler Cron job to be enabled on your server. See the Laravel docs for more info on how to add this single Cron job.
+            tab: Advanced
