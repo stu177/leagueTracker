@@ -5,8 +5,6 @@ use Redirect;
 use BackendMenu;
 use Backend\Classes\Controller;
 use Stu177\LeagueTracker\Models\Summoner;
-use Stu177\LeagueTracker\Models\Settings;
-use LeagueWrap\Api;
 
 /**
  * Summoner Controller

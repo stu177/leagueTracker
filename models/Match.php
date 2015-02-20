@@ -16,14 +16,6 @@ class Match extends Model
      * Validation
      */
     public $rules = [
-        'id' => 'required|summonerExists'
+        'id' => 'required'
     ];
-
-    /**
-     * Retrieves last 15 matches for tracked summoners
-     */
-    public function getMatches($summoners)
-    {
-
-    }
 }

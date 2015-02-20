@@ -45,7 +45,8 @@ class Summoner extends Model
     /**
      * Before creating the record, get the unique ID from Riot's API
      */
-    public function beforeCreate() {
+    public function beforeCreate()
+    {
         $api = new Api(Settings::get('api_key'));
         $api->setRegion($this->region);
         $summoner = $api->summoner();
