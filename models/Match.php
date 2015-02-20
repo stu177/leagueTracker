@@ -16,6 +16,10 @@ class Match extends Model
      * Validation
      */
     public $rules = [
-        'id' => 'required'
+        'id' => 'required|unique:league_tracker_match'
+    ];
+
+    public $customMessages = [
+        'id.unique' => 'Match(es) already exists!'
     ];
 }

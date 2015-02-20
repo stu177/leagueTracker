@@ -1,6 +1,7 @@
 <?php namespace Stu177\LeagueTracker\Controllers;
 
 use Flash;
+use League\Flysystem\Exception;
 use Redirect;
 use BackendMenu;
 use Backend\Classes\Controller;
@@ -36,6 +37,11 @@ class Matches extends Controller
         $this->asExtension('ListController')->index();
     }
 
+    /**
+     * Gets matches for tracked summoners
+     *
+     * @return mixed
+     */
     public function index_onGetMatches()
     {
         $api = new Api(Settings::get('api_key'));
@@ -59,6 +65,11 @@ class Matches extends Controller
         return $this->listRefresh();
     }
 
+    /**
+     * Deletes selected matches
+     *
+     * @return mixed
+     */
     public function index_onDelete()
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
